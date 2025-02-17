@@ -25,9 +25,9 @@
     est: 1 h, fact: X min
 9.  Внедрение логики сортировки во view model
     est: 40 min, fact: X min
-9.  Добавление на View алерта фильтрации
+10.  Добавление на View алерта фильтрации
     est: 15 min, fact: X min
-10. Рефакторинг 
+11. Рефакторинг 
     est: 4 h, fact: X min
 
 ## Epic 2/3 (Экран "NftCollection" + Stub web view)
