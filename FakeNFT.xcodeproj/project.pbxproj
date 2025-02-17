@@ -24,6 +24,9 @@
 		0CFCB74B2A780EA80009A829 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCB74A2A780EA80009A829 /* UIView+Constraints.swift */; };
 		0CFCB74E2A7817DC0009A829 /* NftStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFCB74D2A7817DC0009A829 /* NftStorage.swift */; };
 		18508D852D635584002856A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18508D842D635584002856A7 /* Localizable.strings */; };
+		18508D892D635DE4002856A7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18508D882D635DE4002856A7 /* swiftgen.yml */; };
+		18508D8C2D635F86002856A7 /* Localization.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18508D8B2D635F86002856A7 /* Localization.generated.swift */; };
+		2BB3E1A860B1A4E7FD3C9C51 /* Pods_FakeNFT_FakeNFTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664FF7E47A1B8C797D0BA25B /* Pods_FakeNFT_FakeNFTUITests.framework */; };
 		3F478ED129DB476500F6D39E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F478ED029DB476500F6D39E /* Fonts.swift */; };
 		3F603CCD29DB4A53000C43D7 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3F603CCC29DB4A53000C43D7 /* ProgressHUD */; };
 		3F603CD029DB4A74000C43D7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3F603CCF29DB4A74000C43D7 /* Kingfisher */; };
@@ -42,6 +45,8 @@
 		3FC8C39129D2453B0081F015 /* ExamplePutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8C39029D2453B0081F015 /* ExamplePutRequest.swift */; };
 		3FC8C39329D246BA0081F015 /* DateFormatters+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8C39229D246BA0081F015 /* DateFormatters+Presets.swift */; };
 		558E39E72C68CE0A00FB86AC /* NftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558E39E62C68CE0900FB86AC /* NftService.swift */; };
+		CF9D926E4F60646669A6A027 /* Pods_FakeNFTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD14D71FF3AFB20A05EA7E0 /* Pods_FakeNFTTests.framework */; };
+		DF6D3BF43965879237C74BA6 /* Pods_FakeNFT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36EB435D8130BAA668A0B12 /* Pods_FakeNFT.framework */; };
 		E19CD5AB2A98B56600CA39A5 /* NftImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19CD5AA2A98B56600CA39A5 /* NftImageCollectionViewCell.swift */; };
 		E1A1B9DA2AA01CE400C3AFBC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1B9D92AA01CE400C3AFBC /* TabBarController.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +86,9 @@
 		0CFCB74A2A780EA80009A829 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		0CFCB74D2A7817DC0009A829 /* NftStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftStorage.swift; sourceTree = "<group>"; };
 		18508D832D635584002856A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18508D882D635DE4002856A7 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		18508D8B2D635F86002856A7 /* Localization.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.generated.swift; sourceTree = "<group>"; };
+		326A57F04451DD7099A56E9F /* Pods-FakeNFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFT.release.xcconfig"; path = "Target Support Files/Pods-FakeNFT/Pods-FakeNFT.release.xcconfig"; sourceTree = "<group>"; };
 		3F478ED029DB476500F6D39E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		3F68069329CBBAF100B4F915 /* FakeNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F68069629CBBAF100B4F915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +109,14 @@
 		3FC8C39029D2453B0081F015 /* ExamplePutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePutRequest.swift; sourceTree = "<group>"; };
 		3FC8C39229D246BA0081F015 /* DateFormatters+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatters+Presets.swift"; sourceTree = "<group>"; };
 		558E39E62C68CE0900FB86AC /* NftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftService.swift; sourceTree = "<group>"; };
+		664FF7E47A1B8C797D0BA25B /* Pods_FakeNFT_FakeNFTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeNFT_FakeNFTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		850B8982A13B0EC461BA382A /* Pods-FakeNFTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFTTests.debug.xcconfig"; path = "Target Support Files/Pods-FakeNFTTests/Pods-FakeNFTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		941CF03E20FB0CC5068E8EB4 /* Pods-FakeNFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFT.debug.xcconfig"; path = "Target Support Files/Pods-FakeNFT/Pods-FakeNFT.debug.xcconfig"; sourceTree = "<group>"; };
+		A58326DB6191B76F8D2E06D6 /* Pods-FakeNFT-FakeNFTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFT-FakeNFTUITests.release.xcconfig"; path = "Target Support Files/Pods-FakeNFT-FakeNFTUITests/Pods-FakeNFT-FakeNFTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B36EB435D8130BAA668A0B12 /* Pods_FakeNFT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeNFT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD328120F59F69D9F445F4A5 /* Pods-FakeNFT-FakeNFTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFT-FakeNFTUITests.debug.xcconfig"; path = "Target Support Files/Pods-FakeNFT-FakeNFTUITests/Pods-FakeNFT-FakeNFTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEF190DCCE2E781761B04992 /* Pods-FakeNFTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFTTests.release.xcconfig"; path = "Target Support Files/Pods-FakeNFTTests/Pods-FakeNFTTests.release.xcconfig"; sourceTree = "<group>"; };
+		DDD14D71FF3AFB20A05EA7E0 /* Pods_FakeNFTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeNFTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19CD5AA2A98B56600CA39A5 /* NftImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1A1B9D92AA01CE400C3AFBC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +128,7 @@
 			files = (
 				3F603CD029DB4A74000C43D7 /* Kingfisher in Frameworks */,
 				3F603CCD29DB4A53000C43D7 /* ProgressHUD in Frameworks */,
+				DF6D3BF43965879237C74BA6 /* Pods_FakeNFT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9D926E4F60646669A6A027 /* Pods_FakeNFTTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB3E1A860B1A4E7FD3C9C51 /* Pods_FakeNFT_FakeNFTUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +229,15 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		18508D872D635DCF002856A7 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				18508D8B2D635F86002856A7 /* Localization.generated.swift */,
+				18508D882D635DE4002856A7 /* swiftgen.yml */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		3F68068A29CBBAF100B4F915 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +245,8 @@
 				3F6806AC29CBBAF200B4F915 /* FakeNFTTests */,
 				3F6806B629CBBAF200B4F915 /* FakeNFTUITests */,
 				3F68069429CBBAF100B4F915 /* Products */,
+				7ED61EB5FF40BBEF4C7FD394 /* Pods */,
+				84EC3453D45FF6B8088EE9AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +268,7 @@
 				3F6806C929CBBCAF00B4F915 /* Models */,
 				3F6806C729CBBC5B00B4F915 /* Scenes  */,
 				3F6806C629CBBC4E00B4F915 /* Services */,
+				18508D872D635DCF002856A7 /* SwiftGen */,
 				18508D822D635573002856A7 /* Localization */,
 				E1CD40DA2A96BE9B00BE7FE8 /* Resources */,
 			);
@@ -341,6 +372,29 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		7ED61EB5FF40BBEF4C7FD394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				941CF03E20FB0CC5068E8EB4 /* Pods-FakeNFT.debug.xcconfig */,
+				326A57F04451DD7099A56E9F /* Pods-FakeNFT.release.xcconfig */,
+				BD328120F59F69D9F445F4A5 /* Pods-FakeNFT-FakeNFTUITests.debug.xcconfig */,
+				A58326DB6191B76F8D2E06D6 /* Pods-FakeNFT-FakeNFTUITests.release.xcconfig */,
+				850B8982A13B0EC461BA382A /* Pods-FakeNFTTests.debug.xcconfig */,
+				CEF190DCCE2E781761B04992 /* Pods-FakeNFTTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84EC3453D45FF6B8088EE9AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B36EB435D8130BAA668A0B12 /* Pods_FakeNFT.framework */,
+				664FF7E47A1B8C797D0BA25B /* Pods_FakeNFT_FakeNFTUITests.framework */,
+				DDD14D71FF3AFB20A05EA7E0 /* Pods_FakeNFTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E19CD5A92A98B55900CA39A5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +430,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F6806BD29CBBAF200B4F915 /* Build configuration list for PBXNativeTarget "FakeNFT" */;
 			buildPhases = (
+				116A18DF7ED28DDFC65859A1 /* [CP] Check Pods Manifest.lock */,
+				18508D8A2D635E6E002856A7 /* SwiftGen */,
 				3F68068F29CBBAF100B4F915 /* Sources */,
 				3F68069029CBBAF100B4F915 /* Frameworks */,
 				3F68069129CBBAF100B4F915 /* Resources */,
@@ -397,6 +453,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F6806C029CBBAF200B4F915 /* Build configuration list for PBXNativeTarget "FakeNFTTests" */;
 			buildPhases = (
+				47C2F8906D74E1387C1217F7 /* [CP] Check Pods Manifest.lock */,
 				3F6806A529CBBAF200B4F915 /* Sources */,
 				3F6806A629CBBAF200B4F915 /* Frameworks */,
 				3F6806A729CBBAF200B4F915 /* Resources */,
@@ -415,6 +472,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F6806C329CBBAF200B4F915 /* Build configuration list for PBXNativeTarget "FakeNFTUITests" */;
 			buildPhases = (
+				2AEA62832EF1EC464E62CE45 /* [CP] Check Pods Manifest.lock */,
 				3F6806AF29CBBAF200B4F915 /* Sources */,
 				3F6806B029CBBAF200B4F915 /* Frameworks */,
 				3F6806B129CBBAF200B4F915 /* Resources */,
@@ -485,6 +543,7 @@
 				3F6806A329CBBAF200B4F915 /* LaunchScreen.storyboard in Resources */,
 				18508D852D635584002856A7 /* Localizable.strings in Resources */,
 				3F6806A029CBBAF200B4F915 /* Assets.xcassets in Resources */,
+				18508D892D635DE4002856A7 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +563,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		116A18DF7ED28DDFC65859A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FakeNFT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18508D8A2D635E6E002856A7 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" config run --config FakeNFT/SwiftGen/swiftgen.yml\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi \n";
+		};
+		2AEA62832EF1EC464E62CE45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FakeNFT-FakeNFTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47C2F8906D74E1387C1217F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FakeNFTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F68068F29CBBAF100B4F915 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -511,6 +657,7 @@
 			files = (
 				3FC8C38B29D242E90081F015 /* ProductDetailsTableViewCell.swift in Sources */,
 				0C79EE662A76DDFF00EE90EA /* NftDetailViewController.swift in Sources */,
+				18508D8C2D635F86002856A7 /* Localization.generated.swift in Sources */,
 				E1A1B9DA2AA01CE400C3AFBC /* TabBarController.swift in Sources */,
 				3F478ED129DB476500F6D39E /* Fonts.swift in Sources */,
 				0C79EE6A2A76DE1000EE90EA /* NftDetailAssembly.swift in Sources */,
@@ -711,6 +858,7 @@
 		};
 		3F6806BE29CBBAF200B4F915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941CF03E20FB0CC5068E8EB4 /* Pods-FakeNFT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -740,6 +888,7 @@
 		};
 		3F6806BF29CBBAF200B4F915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326A57F04451DD7099A56E9F /* Pods-FakeNFT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -769,6 +918,7 @@
 		};
 		3F6806C129CBBAF200B4F915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850B8982A13B0EC461BA382A /* Pods-FakeNFTTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -788,6 +938,7 @@
 		};
 		3F6806C229CBBAF200B4F915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF190DCCE2E781761B04992 /* Pods-FakeNFTTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -807,6 +958,7 @@
 		};
 		3F6806C429CBBAF200B4F915 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD328120F59F69D9F445F4A5 /* Pods-FakeNFT-FakeNFTUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -824,6 +976,7 @@
 		};
 		3F6806C529CBBAF200B4F915 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58326DB6191B76F8D2E06D6 /* Pods-FakeNFT-FakeNFTUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
