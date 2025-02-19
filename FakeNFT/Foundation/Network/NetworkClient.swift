@@ -19,6 +19,7 @@ protocol NetworkClient {
               completionQueue: DispatchQueue,
               onResponse: @escaping (Result<Data, Error>) -> Void) -> NetworkTask?
     
+    
     /// Отправляет сетевой запрос и декодирует ответ в указанный тип `T`, где `T` соответствует протоколу `Decodable`.
     ///
     /// - Parameters:
@@ -49,6 +50,7 @@ extension NetworkClient {
               onResponse: @escaping (Result<Data, Error>) -> Void) -> NetworkTask? {
         send(request: request, completionQueue: .main, onResponse: onResponse)
     }
+    
     
     /// Отправляет сетевой запрос и декодирует ответ в указанный тип `T`, где `T` соответствует протоколу `Decodable`.
     /// Completion handler выполняется на главной очереди.
