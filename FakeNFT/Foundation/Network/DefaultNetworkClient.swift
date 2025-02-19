@@ -86,12 +86,14 @@ struct DefaultNetworkClient: NetworkClient {
         urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         urlRequest.addValue(RequestConstants.token, forHTTPHeaderField: "X-Practicum-Mobile-Token")
         
+        // Здесь формируется body для PUT request'а
         if let dtoDictionary = request.dto?.asDictionary() {
             urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             var urlComponents = URLComponents()
             urlComponents.queryItems = dtoDictionary.map { URLQueryItem(name: $0.key, value: $0.value) }
             urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
         }
+        
         return urlRequest
     }
     
