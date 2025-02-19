@@ -26,6 +26,8 @@
 		18508D852D635584002856A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18508D842D635584002856A7 /* Localizable.strings */; };
 		18508D892D635DE4002856A7 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18508D882D635DE4002856A7 /* swiftgen.yml */; };
 		18508D8C2D635F86002856A7 /* Localization.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18508D8B2D635F86002856A7 /* Localization.generated.swift */; };
+		188B58F92D66544A005D960A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B58F82D66544A005D960A /* DIContainer.swift */; };
+		188B58FB2D665F0D005D960A /* DIContainerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188B58FA2D665F0D005D960A /* DIContainerError.swift */; };
 		2BB3E1A860B1A4E7FD3C9C51 /* Pods_FakeNFT_FakeNFTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664FF7E47A1B8C797D0BA25B /* Pods_FakeNFT_FakeNFTUITests.framework */; };
 		3F478ED129DB476500F6D39E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F478ED029DB476500F6D39E /* Fonts.swift */; };
 		3F603CCD29DB4A53000C43D7 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3F603CCC29DB4A53000C43D7 /* ProgressHUD */; };
@@ -88,6 +90,8 @@
 		18508D832D635584002856A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		18508D882D635DE4002856A7 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		18508D8B2D635F86002856A7 /* Localization.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.generated.swift; sourceTree = "<group>"; };
+		188B58F82D66544A005D960A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		188B58FA2D665F0D005D960A /* DIContainerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerError.swift; sourceTree = "<group>"; };
 		326A57F04451DD7099A56E9F /* Pods-FakeNFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNFT.release.xcconfig"; path = "Target Support Files/Pods-FakeNFT/Pods-FakeNFT.release.xcconfig"; sourceTree = "<group>"; };
 		3F478ED029DB476500F6D39E /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		3F68069329CBBAF100B4F915 /* FakeNFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeNFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +242,15 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
+		188B58F72D665420005D960A /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				188B58F82D66544A005D960A /* DIContainer.swift */,
+				188B58FA2D665F0D005D960A /* DIContainerError.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		3F68068A29CBBAF100B4F915 = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +350,7 @@
 			children = (
 				0CFCB74C2A7817C30009A829 /* MemoryStorage */,
 				3F6806CF29CBBDB100B4F915 /* NetworkClient */,
+				188B58F72D665420005D960A /* DI */,
 				3F6806D629CBC50A00B4F915 /* CellsReusingUtils.swift */,
 				3FC8C39229D246BA0081F015 /* DateFormatters+Presets.swift */,
 				0CFCB74A2A780EA80009A829 /* UIView+Constraints.swift */,
@@ -665,6 +679,7 @@
 				0CFCB7422A78013E0009A829 /* Nft.swift in Sources */,
 				0CF2C2DD2A783CE600FDC837 /* ErrorView.swift in Sources */,
 				0C79EE682A76DE0900EE90EA /* NftDetailPresenter.swift in Sources */,
+				188B58FB2D665F0D005D960A /* DIContainerError.swift in Sources */,
 				3F68069B29CBBAF100B4F915 /* ProductDetailsTableViewController.swift in Sources */,
 				0CFCB7402A78002A0009A829 /* ExamplePutService.swift in Sources */,
 				3F6806D529CBBEC700B4F915 /* NetworkTask.swift in Sources */,
@@ -683,6 +698,7 @@
 				0CF2C2E12A784C7000FDC837 /* LinePageControl.swift in Sources */,
 				3F6806D329CBBE9600B4F915 /* NetworkRequest.swift in Sources */,
 				0CFCB7492A7808900009A829 /* TestCatalogController.swift in Sources */,
+				188B58F92D66544A005D960A /* DIContainer.swift in Sources */,
 				3F6806D129CBBE6B00B4F915 /* NetworkClient.swift in Sources */,
 				0CFCB7442A7802440009A829 /* NftDetailInput.swift in Sources */,
 				0C79EE632A76DD1900EE90EA /* RequestConstants.swift in Sources */,
