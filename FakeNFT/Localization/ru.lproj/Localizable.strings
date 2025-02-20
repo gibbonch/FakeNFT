@@ -1,0 +1,23 @@
+// MARK: - TabBar
+
+"Tab.catalog" = "Каталог";
+"Tab.cart" = "Корзина";
+"Tab.profile" = "Профиль";
+"Tab.statistics" = "Статистика";
+
+// MARK: - Catalog
+
+"Catalog.openNft" = "Открыть Nft";
+
+// MARK: - Cart
+
+// MARK: - Profile
+
+// MARK: - Statistics
+
+// MARK: - Error
+
+"Error.network" = "Произошла ошибка сети";
+"Error.unknown" = "Произошла неизвестная ошибка";
+"Error.repeat" = "Повторить";
+"Error.title" = "Ошибка";

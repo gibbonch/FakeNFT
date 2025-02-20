@@ -1,0 +1,12 @@
+input_dir: ${PROJECT_DIR}/FakeNFT
+output_dir: ${PROJECT_DIR}/FakeNFT/SwiftGen
+
+strings:
+  inputs:
+    - Localization/ru.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: false
+      output: Localization.generated.swift
+

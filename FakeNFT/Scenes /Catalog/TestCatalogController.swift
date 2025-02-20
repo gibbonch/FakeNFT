@@ -1,12 +1,15 @@
 import UIKit
 
 final class TestCatalogViewController: UIViewController {
+    private lazy var testNftButton:  UIButton = {
+        let button = UIButton()
+        button.setTitle(Constants.openNftTitle, for: .normal)
+        button.addTarget(self, action: #selector(showNft), for: .touchUpInside)
+        button.setTitleColor(.systemBlue, for: .normal)
+        return button
+    }()
 
-    let servicesAssembly: ServicesAssembly
-    let testNftButton = UIButton()
-
-    init(servicesAssembly: ServicesAssembly) {
-        self.servicesAssembly = servicesAssembly
+    init() {
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -16,19 +19,18 @@ final class TestCatalogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .systemBackground
-
         view.addSubview(testNftButton)
         testNftButton.constraintCenters(to: view)
-        testNftButton.setTitle(Constants.openNftTitle, for: .normal)
-        testNftButton.addTarget(self, action: #selector(showNft), for: .touchUpInside)
-        testNftButton.setTitleColor(.systemBlue, for: .normal)
     }
 
     @objc
     func showNft() {
-        let assembly = NftDetailAssembly(servicesAssembler: servicesAssembly)
+        guard let service = try? DIContainer.shared.resolve(NftService.self) else {
+            return
+        }
+        
+        let assembly = NftDetailAssembly(nftService: service)
         let nftInput = NftDetailInput(id: Constants.testNftId)
         let nftViewController = assembly.build(with: nftInput)
         present(nftViewController, animated: true)
@@ -36,6 +38,6 @@ final class TestCatalogViewController: UIViewController {
 }
 
 private enum Constants {
-    static let openNftTitle = NSLocalizedString("Catalog.openNft", comment: "")
+    static let openNftTitle = L10n.Catalog.openNft
     static let testNftId = "7773e33c-ec15-4230-a102-92426a3a6d5a"
 }
