@@ -7,7 +7,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         DIContainer.shared.registerDependencies()
-        let s = try? DIContainer.shared.resolve(NetworkClient.self)
         return true
     }
 
