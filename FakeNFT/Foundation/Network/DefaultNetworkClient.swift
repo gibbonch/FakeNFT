@@ -84,7 +84,9 @@ struct DefaultNetworkClient: NetworkClient {
         urlRequest.httpMethod = request.httpMethod.rawValue
         
         urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-        urlRequest.addValue(RequestConstants.token, forHTTPHeaderField: "X-Practicum-Mobile-Token")
+        
+        guard let token = RequestConstants.token else { return nil }
+        urlRequest.addValue(token, forHTTPHeaderField: "X-Practicum-Mobile-Token")
         
         // Здесь формируется body для PUT request'а
         if let dtoDictionary = request.dto?.asDictionary() {
