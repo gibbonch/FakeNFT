@@ -1,34 +1,41 @@
 import UIKit
 
 final class TabBarController: UITabBarController {
-
-    private let servicesAssembly: ServicesAssembly!
-
+    
+    // MARK: - Private Properties
+    
     private let catalogTabBarItem = UITabBarItem(
         title: L10n.Tab.catalog,
         image: .catalogTab,
         tag: 0
     )
     
-    init(servicesAssembly: ServicesAssembly) {
-        self.servicesAssembly = servicesAssembly
-        super.init(nibName: nil, bundle: nil)
-    }
+    private let profileTabBarItem = UITabBarItem(
+        title: L10n.Tab.profile,
+        image: .profileTab,
+        tag: 0
+    )
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    private let cartTabBarItem = UITabBarItem(
+        title: L10n.Tab.cart,
+        image: .cartTab,
+        tag: 0
+    )
+    
+    private let statisticsTabBarItem = UITabBarItem(
+        title: L10n.Tab.statistics,
+        image: .statisticsTab,
+        tag: 0
+    )
+    
+    // MARK: - Public Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let catalogController = TestCatalogViewController(
-            servicesAssembly: servicesAssembly
-        )
+        let catalogController = TestCatalogViewController()
         catalogController.tabBarItem = catalogTabBarItem
-
         viewControllers = [catalogController]
-
         view.backgroundColor = .systemBackground
     }
 }

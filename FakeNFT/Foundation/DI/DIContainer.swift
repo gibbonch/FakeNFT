@@ -2,7 +2,7 @@
 ///
 /// `DependencyFactory` — это замыкание, которое возвращает экземпляр типа `T`.
 /// Используется для регистрации и создания зависимостей в `DIContainer`.
-typealias DependencyFactory<T> = () -> T
+typealias DependencyFactory<T> = () -> T?
 
 /// Контейнер для управления зависимостями.
 ///
@@ -48,16 +48,26 @@ final class DIContainer {
     ///
     func resolve<T>(_ type: T.Type) throws -> T {
         let key = String(describing: type)
-        guard let factory = registry[key] as? DependencyFactory<T> else {
+        guard let factory = registry[key],
+              let instance = factory() as? T else {
             throw DIContainerError.resolvingError("\(T.self)")
         }
-        return factory()
+        return instance
     }
 }
 
 extension DIContainer {
-    private func registerDependencies() {
+    func registerDependencies() {
         register(NetworkClient.self) { DefaultNetworkClient() }
         register(NftStorage.self) { NftStorageImpl() }
+        
+        register(NftService.self) {
+            guard let client = try? DIContainer.shared.resolve(NetworkClient.self),
+                  let storage = try? DIContainer.shared.resolve(NftStorage.self) else {
+                return nil
+            }
+            return NftServiceImpl(networkClient: client, storage: storage)
+        }
     }
 }
+
